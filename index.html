@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body> 
+
+<form name="Form" action="contact.php" method="post" >
+    <h2>Contact Form</h2>
+
+    <div class="box">
+        <label>Title *</label>
+        <select name="Title" id="Title" required>
+            <option>Select</option>
+            <option>Mr</option>
+            <option>Ms</option>
+            <option>Mrs</option>
+        </select> 
+    </div>
+
+    <div class="box">
+        <label>First Name *</label>
+        <input type="text" maxlength="50" name="fname" id="fname" required>
+    </div>
+
+    <div class="box">
+        <label>Last Name *</label>
+        <input type="text" maxlength="50" name="lname" id="lname" required>
+    </div>
+
+    <div class="box">
+        <label>Date of Birth *</label>
+        <input type="date" name="date" id="date" maxdate required >
+    </div>
+
+    <div class="box">
+        <label>Mobile Number *</label>
+        <input type="text" name="mobile" maxlength="12" id="mobile" required>
+    </div>
+
+    <div class="box">
+        <label>File upload</label>
+        <input type="file"  name="file" id="file"  accept="image/jpeg, application/pdf">
+    </div>
+    
+    <div class="box">
+        <label>Email Address *</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    
+    <div class="box">
+        <label>Message</label>
+        <textarea name="message" id="message" cols="maxlength" rows="5"></textarea>
+    </div>
+          
+    <div class="box">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+
+
+</body>
+</html>
